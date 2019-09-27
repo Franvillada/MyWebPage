@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="92" viewBox="0 0 92 92">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Elipse_2" data-name="Elipse 2" cx="46" cy="46" r="46" transform="translate(761 6157)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_2" data-name="Enmascarar grupo 2" transform="translate(-761 -6157)" clip-path="url(#clip-path)">
+    <path id="linkedin" d="M46,0A46,46,0,1,0,92,46,46.005,46.005,0,0,0,46,0ZM32.633,69.539H21.43v-33.7h11.2Zm-5.6-38.307h-.073c-3.759,0-6.191-2.588-6.191-5.822,0-3.307,2.506-5.824,6.338-5.824S33.3,22.1,33.37,25.41c0,3.234-2.431,5.822-6.338,5.822Zm46,38.307h-11.2V51.508c0-4.532-1.622-7.622-5.676-7.622a6.133,6.133,0,0,0-5.748,4.1,7.672,7.672,0,0,0-.368,2.734V69.539h-11.2s.147-30.543,0-33.7h11.2v4.772a11.122,11.122,0,0,1,10.1-5.563c7.371,0,12.9,4.817,12.9,15.17Zm0,0" transform="translate(761 6157)" fill="#eceff0"/>
+  </g>
+</svg>

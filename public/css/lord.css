@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul,ol {
+    list-style:none;
+}
+
+/*Desktop */
+
+/* Styles for Menu component */
+
+.menu{
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ECEFF0;
+}
+
+.menu div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #2B3D4E;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Styles for Banner component */
+
+.banner{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ECEFF0;
+}
+
+.banner div{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 5vw;
+    border-radius: 3em;
+    margin-bottom: 1em;
+}
+
+.banner h1{
+    color: #2B3D4E;
+    font-size: 2em;
+}
+
+.background{
+    width: 50vw;
+    opacity: 0.3;
+}
+
+/* Styles for AboutMe Component */
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ECEFF0;
+}
+
+.description{
+    height: 100vh;
+    text-align: center;
+    padding: 0 10vw;
+    background-color: #2B3D4E;
+}
+
+.description h2{
+    font-size: 2em;
+    margin-top: 20vh;
+    margin-bottom: 1em;
+}
+
+.description p{
+    font-size: 1.5em;
+    margin: 0 10vw;
+}
+
+.skills{
+    
+    padding: 0 15vw;
+    background-color: #ECEFF0;
+    padding-bottom: 15vh;
+}
+
+.mmm{
+    display: flex;
+    height: 75vh;
+    margin-top: -25vh;
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: -6px 6px 6px rgb(86, 86, 86,0.2);
+}
+/* Styles for SkillCard Component*/
+
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 23.3333333vw;
+    color: #565656;
+    text-align: center;
+    margin: 1em;
+}
+
+.skill-card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5em;
+}
+
+.skill-card div:first-child{
+    height: 20%;
+}
+
+.skill-card div:nth-child(2){
+    height: 35%;
+    justify-content: flex-start;
+}
+
+.skill-card div:last-child{
+    justify-content: flex-start;
+    height: 45%;
+}
+
+.skill-card div:last-child p{
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+/* Styles for Projects Component */
+
+.projects{
+    background-color: #2B3D4E;
+    color: #ECEFF0;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.projects h3{
+    font-size: 2em;
+    padding: 15vh 0 0 0;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10vh 20vw 0 20vw;
+}
+
+/* Styles for Projects Component */
+
+.project{
+    height: 25vw;
+    width: 100%;
+    border: 1px solid grey
+}
+
+/* Styles for Blog Component */
+
+.blog{
+    background-color: #ECEFF0;
+    color: #565656;
+    text-align: center;
+}
+
+.blog h3{
+    padding-top: 20vh;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.blog p{
+    padding: 0 30vw;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.blog a{
+    display: inline-block;
+    width: 15vw;
+    text-decoration: none;
+    border-radius: 2em;
+    background-color: #2B3D4E;
+    padding: 2vh 0;
+    color: #ECEFF0;
+    font-weight: bold;
+    margin-bottom: 30vh;
+}
+
+/* Style for Contact Component */
+
+.contact{
+    display: flex;
+    background-color: #2B3D4E;
+    justify-content: center;
+}
+
+.contact div{
+    width: 70vw;
+    background-color: #C74F42;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    border-radius: 1.7em;
+    color: #ECEFF0;
+    margin-top: -7.5vh;
+}
+
+.contact p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contact a{
+    display: inline-block;
+    border: 2px solid #ECEFF0;
+    border-radius: 2em;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    color: #ECEFF0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact a:hover{
+    background-color: #2B3D4E;
+    border: 2px solid #2B3D4E;
+}
+
+/* Styles for Footer Component */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B3D4E;
+    text-align: center;
+    color: #ECEFF0;
+}
+
+.footer div{
+    margin: 15vh 0 10vh 0;
+}
+
+.social-logo{
+    width: 5vw;
+    margin: 0 1vw
+}
+
+.footer p{
+    margin-bottom: 5vh;
+}

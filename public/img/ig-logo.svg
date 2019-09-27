@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="92" viewBox="0 0 92 92">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Elipse_4" data-name="Elipse 4" cx="46" cy="46" r="46" transform="translate(1067 6157)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_4" data-name="Enmascarar grupo 4" transform="translate(-1067 -6157)" clip-path="url(#clip-path)">
+    <g id="logo-de-instagram" transform="translate(1067 6157)">
+      <g id="Grupo_8" data-name="Grupo 8">
+        <g id="Grupo_7" data-name="Grupo 7">
+          <path id="Trazado_53" data-name="Trazado 53" d="M46,55.209A9.194,9.194,0,1,0,36.793,46,9.224,9.224,0,0,0,46,55.209Z" fill="#eceff0"/>
+          <path id="Trazado_54" data-name="Trazado 54" d="M66.108,34.734V25.866l-1.154,0-7.715.024.03,8.87Z" fill="#eceff0"/>
+          <path id="Trazado_55" data-name="Trazado 55" d="M46,0A46,46,0,1,0,92,46,46.052,46.052,0,0,0,46,0ZM72.161,40.632V62.052A10.122,10.122,0,0,1,62.05,72.165H29.95A10.121,10.121,0,0,1,19.839,62.052v-32.1A10.12,10.12,0,0,1,29.95,19.841h32.1A10.122,10.122,0,0,1,72.161,29.952Z" fill="#eceff0"/>
+          <path id="Trazado_56" data-name="Trazado 56" d="M60.31,46a14.309,14.309,0,1,1-27.566-5.368h-7.81V62.052a5.013,5.013,0,0,0,5.014,5.01h32.1a5.015,5.015,0,0,0,5.014-5.01V40.632H59.246A14.114,14.114,0,0,1,60.31,46Z" fill="#eceff0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
