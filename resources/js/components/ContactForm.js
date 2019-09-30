@@ -1,5 +1,6 @@
 import React,{ Component } from 'react'
 import ReactDOM from 'react-dom'
+import Footer from './Footer'
 
 export default class ContactForm extends Component{
     constructor(props){
@@ -8,22 +9,22 @@ export default class ContactForm extends Component{
 
     render(){
         return(
-            <div id="contact-form" class="contact-form">
-                <p>Leave me message and I will contact you ASAP</p>
+            <div className="contact-form">
+                <a href="/">Home</a>
+                <img className="logo" src="img/logo.svg" alt="logo"></img>
+                <p>Leave me message and I will contact you ASAP...</p>
                 <form>
-                    <input type="text" id="name" />
-                    <input type="email" id="email" />
-                    <textarea>
-
+                    <input type="text" id="name" placeholder="Name"/>
+                    <input type="email" id="email" placeholder="Email" />
+                    <textarea id="message" placeholder="Leave a message">
                     </textarea>
                     <button type="submit">Enviar</button>
                 </form>
-                <Footer />
-            </div>    
+            </div>
         )
     }
 }
 
-if(document.getElementById('contact')) {
-    ReactDOM.render(<ContactForm />, document.getElementById('contact'));
+if(document.getElementById('contact-form')) {
+    ReactDOM.render(<ContactForm />, document.getElementById('contact-form'));
 }

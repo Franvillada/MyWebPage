@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/lord.css">
     </head>
     <body>
-        <div id="contact"> 
+        <div id="contact-form">
         </div>
         <script src="js/app.js"></script>
     </body>

@@ -48449,6 +48449,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./components/App */ "./resources/js/components/App.js");
 
+__webpack_require__(/*! ./components/ContactForm */ "./resources/js/components/ContactForm.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -48823,7 +48825,7 @@ function (_Component) {
         id: "contact",
         className: "contact"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Interested in starting a project?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
+        href: "/contact"
       }, "Contact me")));
     }
   }]);
@@ -48832,6 +48834,93 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
+
+/***/ }),
+
+/***/ "./resources/js/components/ContactForm.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/ContactForm.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ContactForm; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var ContactForm =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ContactForm, _Component);
+
+  function ContactForm(props) {
+    _classCallCheck(this, ContactForm);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ContactForm).call(this, props));
+  }
+
+  _createClass(ContactForm, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "contact-form"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/"
+      }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "logo",
+        src: "img/logo.svg",
+        alt: "logo"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Leave me message and I will contact you ASAP..."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        id: "name",
+        placeholder: "Name"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "email",
+        id: "email",
+        placeholder: "Email"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+        id: "message",
+        placeholder: "Leave a message"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit"
+      }, "Enviar")));
+    }
+  }]);
+
+  return ContactForm;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+if (document.getElementById('contact-form')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContactForm, null), document.getElementById('contact-form'));
+}
 
 /***/ }),
 
@@ -49019,9 +49108,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
@@ -49035,18 +49124,62 @@ function (_Component) {
   _inherits(Project, _Component);
 
   function Project(props) {
+    var _this;
+
     _classCallCheck(this, Project);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Project).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Project).call(this, props));
+    _this.state = {
+      hover: false
+    };
+    _this.handleHover = _this.handleHover.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(Project, [{
+    key: "handleHover",
+    value: function handleHover() {
+      if (this.state.hover === false) {
+        this.setState({
+          hover: true
+        });
+      } else {
+        this.setState({
+          hover: false
+        });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
+      var imgStyles = {
+        position: "absolute",
+        left: "0",
+        top: "0",
+        height: "50vh",
+        width: "30vw",
+        backgroundImage: "url(" + this.props.imgUrl + ")",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        opacity: this.state.hover ? "0.15" : "1"
+      };
+      var infoStyles = {
+        display: this.state.hover ? "flex" : "none"
+      };
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "project",
-        className: "project"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.props.description));
+        id: this.props.title,
+        className: "project",
+        onMouseEnter: this.handleHover,
+        onMouseLeave: this.handleHover
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: imgStyles
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: infoStyles,
+        className: "info-project-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.props.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: this.props.url,
+        target: "_blank"
+      }, "Visit!")));
     }
   }]);
 
@@ -49111,21 +49244,25 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Some Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "projects-grid"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        title: "",
-        description: "",
-        imgUrl: ""
+        title: "Adelaida Landing-Page",
+        description: "Landing Page for a lingerie store, with a content manager to give the owner the posibility to update the page with new content, images or news.",
+        imgUrl: "img/adelaida.png",
+        url: "//www.adelaida.com.ar"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        title: "",
-        description: "",
-        imgUrl: ""
+        title: "FCC Landing-Page",
+        description: "FCC project to obtain the Responsive Web Design Certification. Product Landing Page for a Trombone business.",
+        imgUrl: "img/trombones.png",
+        url: "https://codepen.io/franvillada/full/gVwOwV"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        title: "",
-        description: "",
-        imgUrl: ""
+        title: "FCC Tribut-Page",
+        description: "FCC project to obtain the Responsive Web Design Certification. Tribut page of Dr Norman Borlaug.",
+        imgUrl: "img/norman.png",
+        url: "https://codepen.io/franvillada/full/YmWqvO"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        title: "",
-        description: "",
-        imgUrl: ""
+        title: "FCC Technical Documentation-Page",
+        description: "FCC project to obtain the Responsive Web Design Certification. Technical Documentation page for JavaScript programming language.",
+        imgUrl: "img/tech-doc.png",
+        url: "https://codepen.io/franvillada/full/aeBOyN"
       })));
     }
   }]);

@@ -9,6 +9,10 @@ ul,ol {
     list-style:none;
 }
 
+body{
+    background-color: #ECEFF0;
+}
+
 /*Desktop */
 
 /* Styles for Menu component */
@@ -99,7 +103,7 @@ ul,ol {
 
 .skills{
     
-    padding: 0 15vw;
+    margin: 0 15vw;
     background-color: #ECEFF0;
     padding-bottom: 15vh;
 }
@@ -120,10 +124,9 @@ ul,ol {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 23.3333333vw;
+    width: 23vw;
     color: #565656;
     text-align: center;
-    margin: 1em;
 }
 
 .skill-card div{
@@ -160,7 +163,7 @@ ul,ol {
     background-color: #2B3D4E;
     color: #ECEFF0;
     text-align: center;
-    padding-bottom: 10vh;
+    padding-bottom: 20vh;
 }
 
 .projects h3{
@@ -175,12 +178,70 @@ ul,ol {
     margin: 10vh 20vw 0 20vw;
 }
 
-/* Styles for Projects Component */
+/* Styles for Project Component */
 
 .project{
-    height: 25vw;
-    width: 100%;
-    border: 1px solid grey
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+}
+
+.project:nth-child(1){
+    box-shadow: -1px -1px 10px rgb(236, 239, 240, 0.2);
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+.project:nth-child(2){
+    box-shadow: 1px -1px 10px rgb(236, 239, 240, 0.2);
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+.project:nth-child(3){
+    box-shadow: -1px 1px 10px rgb(236, 239, 240, 0.2);  
+    margin-right: 2px;
+    margin-top: 2px;  
+}
+
+.project:nth-child(4){
+    box-shadow: 1px 1px 10px rgb(236, 239, 240, 0.2);
+    margin-left: 2px;  
+    margin-top: 2px; 
+}
+
+.info-project-container{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.info-project-container h3{
+    font-size: 1.5em;
+    padding: 0 3vw;
+}
+
+.info-project-container p{
+    padding: 0 3vw;
+    font-size: 1.1em;
+}
+
+.info-project-container a{
+    margin-top: 5vh;
+    display: inline-block;
+    background-color: #C74F42;
+    width: 10vw;
+    border-radius: 2em;
+    height: 5vh;
+    color: #ECEFF0;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding-top: 1vh;
 }
 
 /* Styles for Blog Component */
@@ -215,6 +276,19 @@ ul,ol {
     margin-bottom: 30vh;
 }
 
+.blog a:hover{
+    animation: grow ease-in-out 0.2s forwards;
+}
+
+@keyframes grow{
+    from{
+        width: 15vw;
+        padding: 2vh 0;
+    }to{
+        width: 15.3vw;
+        padding: 2.3vh 0;
+    }
+}
 /* Style for Contact Component */
 
 .contact{
@@ -252,8 +326,17 @@ ul,ol {
 }
 
 .contact a:hover{
-    background-color: #2B3D4E;
-    border: 2px solid #2B3D4E;
+    animation: button-hover 0.2s ease-in-out forwards;
+}
+
+@keyframes button-hover{
+    from{
+        background-color: #C74F42;
+        border: 2px solid #ECEFF0;
+    }to{
+        background-color: #2B3D4E;
+        border: 2px solid #2B3D4E;
+    }
 }
 
 /* Styles for Footer Component */
@@ -279,4 +362,71 @@ ul,ol {
 
 .footer p{
     margin-bottom: 5vh;
+}
+
+/* Styles for ContactForm Component */
+
+.contact-form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ECEFF0;
+}
+
+.contact-form a{
+    align-self: flex-end;
+    margin: 5vh 5vw 0 0;
+    text-decoration: none;
+    color: #2B3D4E;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact-form img, .contact-form p{
+    align-self: center;
+}
+
+.contact-form p{
+    margin: 10vh 0 2.5vh 0;
+    color: #2B3D4E;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.contact-form form{
+    width: 40vw;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw;
+}
+
+.contact-form input{
+    height: 5vh;
+    border: none;
+    margin: 1vh 0;
+    padding-left: 1vw;
+}
+
+.contact-form textarea{
+    height: 15vh;
+    border: none;
+    margin: 1vh 0 5vh 0;
+    padding-left: 1vw;
+    padding-top: 2vh;
+}
+
+.contact-form button{
+    background-color: #C74F42;
+    color: #ECEFF0;
+    width: 12vw;
+    align-self: center;
+    border: none;
+    border-radius: 2em;
+    height: 6vh;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5vh;
+    cursor: pointer;
+    backgro
 }

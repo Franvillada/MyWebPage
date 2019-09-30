@@ -10,7 +10,7 @@ export default class Contact extends Component{
             <div id="contact" className="contact">
                 <div>
                     <p>Interested in starting a project?</p>
-                    <a href="#">Contact me</a>
+                    <a href="/contact">Contact me</a>
                 </div>    
             </div>
         )
